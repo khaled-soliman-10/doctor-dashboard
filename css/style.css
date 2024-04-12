@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Noto Kufi Arabic", sans-serif;
+    direction: rtl;
+    scroll-behavior: smooth;
+    border: none;
+    outline: none;
+}
+
+:root {
+    --main-color: #1400ff;
+    --aqua-color: #57b6f6;
+    --main-dark: #180d8d;
+    --sec-color: #1712e2;
+    --thd-color: #3532b4;
+    --white-color: #fff;
+    --black-color: #000;
+    --gray-color: #414141;
+    --gray2-color: #c9c9c9;
+    --gray-week: #ababab50;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.start {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.clm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(250px , 1fr));
+    row-gap: 20px;
+    column-gap: 30px;
+}
+
+.btn {
+    width: 150px;
+    height: 40px;
+    background-image: linear-gradient(to right, var(--sec-color),var(--thd-color));
+    color: var(--white-color);
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px 10px;
+    transition: .3s;
+}
+
+.active {
+    background-color: var(--gray-week) !important;
+}
+
+.top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-image: linear-gradient(to right, var(--sec-color),var(--main-dark));
+    color: var(--white-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 16px;
+    box-shadow: 0 0 10px 1px var(--main-color);
+    cursor: pointer;
+    transition: .3s;
+    display: none;
+}
+
+.display {
+    display: flex;
+}
+
+.width {
+    width: 280px !important;
+}
+
+.top:hover {
+    transform: scale(1.08);
+}
+
+@media (max-width: 860px) {
+    .top {
+        display: none !important;
+    }
+}
+
+.logo {
+    gap: 10px;
+}
+
+.logo img {
+    width: 30px;
+}
+
+.logo h1 {
+    font-size: 30px;
+    color: var(--white-color);
+}
+
+.logo h1 span {
+    color: var(--aqua-color);
+}
+
+/* side start */
+
+.main {
+    height: 100vh;
+    background-color: var(--white-color);
+    gap: 0;
+    overflow: hidden;
+}
+
+aside {
+    height: 100%;
+    width: 60px;
+    padding: 10px;
+    justify-content: space-between !important;
+    transition: .5s;
+    background-image: linear-gradient(110deg , var(--main-dark),var(--thd-color) 60%, var(--main-dark));
+}
+
+aside .main-content {
+    width: 100%;
+}
+
+aside header {
+    width: 100%;
+    justify-content: space-between !important;
+    margin-bottom: 20px;
+}
+
+aside header button {
+    width: 30px;
+    height: 30px;
+    font-size: 23px;
+    background-color: transparent;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+aside .links {
+    width: 100%;
+}
+
+aside .links .link {
+    padding: 2px 10px;
+    width: 100%;
+    justify-content: flex-start;
+    border-radius: 20px;
+    font-size: 15px;
+    color: var(--white-color);
+    transition: .3s;
+}
+
+aside .links .link:hover {
+    background-color: var(--gray-week);
+}
+
+aside form {
+    width: 100%;
+    border-radius: 20px;
+}
+
+aside form button {
+    width: 100% !important;
+    border-radius: inherit;
+    background-color: transparent;
+    background-image: none !important;
+    cursor: pointer;
+    transition: .3s;
+}
+
+aside form button i {
+    font-size: 17px;
+}
+
+aside form button:hover {
+    /* background-color: var(--gray-week); */
+    background-color: #eb51518a;
+}
+
+/* content start */
+
+.content {
+    background-color: var(--white-color);
+    width: 100%;
+    height: 100%;
+    gap: 0px;
+}
+
+.content header,
+.content .patients .head {
+    width: 100%;
+    background-color: var(--gray-week);
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+.content header h1 {
+    font-size: 18px;
+    color: var(--black-color);
+}
+
+.content form div {
+    /* gap: 0; */
+    justify-content: flex-start;
+    background-color: var(--white-color);
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: 350px;
+}
+
+.content form input {
+    width: 100%;
+    font-size: 14px;
+    color: var(--black-color);
+}
+
+.content form i {
+    color: var(--black-color);
+    font-size: 14px;
+}
+
+.content form button {
+    width: 80px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.content header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.content .patients {
+    padding: 20px;
+    width: 100%;
+    gap: 0;
+    height: 100%;
+}
+
+.content .patients .head {
+    border-radius: 10px 10px 0 0;
+}
+
+.content .patients .head h1 {
+    font-size: 18px;
+    color: var(--black-color);
+} 
+
+.content .patients .head img {
+    width: 40px; 
+}
+
+.content .patients .table {
+    width: 100%;
+    height: 85%;
+    overflow-y: auto;
+    background-color: var(--gray-week);
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+}
+
+.content .patients table {
+    width: 100%;
+    max-height: 100%;
+    border-collapse: collapse;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.content table td {
+    padding: 10px 12px;
+}
+
+.content table thead {
+    background-color: var(--gray2-color);
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.content table thead td:last-child {
+    border-radius: 15px 0 0 15px;
+}
+
+.content table thead td:first-child {
+    border-radius: 0px 15px 15px 0px;
+}
+
+.content table tbody tr:not(:last-of-type) {
+    border-bottom: 1px solid var(--gray-color);
+    transition: .3s;
+}
+
+.content table tbody {
+    font-size: 15px;
+    color: var(--gray-color);
+}
+
+.content table tbody tr:hover {
+    background-color: var(--gray-week);
+}
+
+.content table tbody td:last-child {
+    border-radius: 15px 0 0 15px;
+}
+
+.content table tbody td:first-child {
+    border-radius: 0px 15px 15px 0px;
+}
