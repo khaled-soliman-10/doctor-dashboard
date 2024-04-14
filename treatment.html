@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>مستشفي الحياة</title>
+</head>
+<body>
+    
+    <section class="main start">
+        <aside class="clm width">
+            <div class="main-content clm">
+                <header class="center">
+                    <div class="logo center">
+                        <img src="imgs/logo2.png" alt="">
+                        <a href="index.html"><h1>الـ<span>حـ</span>يـاة</h1></a>
+                    </div>
+                    <button class="center"><i class="fa-solid fa-bars"></i></button>
+                </header>
+
+                <div class="links clm">
+
+                    <a class="link center" href="index.html">
+                        <i class="fa-solid fa-bed-pulse"></i>
+                        <h1>المرضي</h1>
+                    </a>
+
+                    <a class="link center active" href="treatment.html">
+                        <i class="fa-solid fa-file-medical"></i>
+                        <h1>الروشتة</h1>
+                    </a>
+
+                    <a class="link center" href="reports.html">
+                        <i class="fa-solid fa-file-signature"></i>
+                        <h1>التقارير</h1>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <form action="" method="post" class="center">
+                <button type="submit" name="exit" class="btn center">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <h1>
+                        تسجيل خروج
+                    </h1>
+                </button>
+            </form>
+        </aside>
+        <div class="content clm">
+            <header class="center">
+                <h1>صباح الخير د. خالد سليمان</h1>
+                <form action="" method="get" class="center">
+                    <div class="center">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" name="name" placeholder="البحث عن اسماء المرضي">
+                    </div>
+                    <button class="btn center" type="submit" name="search">بحث</button>
+                </form>
+                <img src="imgs/khaled.JPEG" alt="">
+            </header>
+            <div class="treatment clm">
+                <div class="t-details clm">
+                    <header class="center">
+                        <div class="dr-details center">
+                            <div class="dr-name clm">
+                                <h3>دكتور</h3>
+                                <h1>خالد سليمان سعد</h1>
+                                <p>استشاري جراحة العظام والكسور والمناظير بمستشفي الحياة</p>
+                            </div>
+                            <img src="imgs/dr.png" alt="">
+                        </div>
+                        <form method="post" class="patient-details clm">
+                            <div class="center">
+                                <h1>الاسم :</h1>
+                                <input type="text" name="name" placeholder="......................" required>
+                            </div>
+                            <div class="center">
+                                <h1>السن :</h1>
+                                <input type="text" name="age" placeholder="......................" required>
+                            </div>
+                            <div class="center">
+                                <h1>الوزن :</h1>
+                                <input type="text" name="weight" placeholder="......................" required>
+                            </div>
+                            <div class="center">
+                                <h1>التاريخ :</h1>
+                                <input type="date" name="date" required>
+                            </div>
+                        </form> 
+                    </header>
+                    <div class="body clm">
+                        <h1>R/</h1>
+                        <textarea name="treatment" rows="10" required autocomplete="off" style="resize: none;" placeholder="اكتب هنا ...................."></textarea>
+                    </div>
+                    <footer class="center">
+                        <div class="location clm">
+                            <div class="center">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h1>العنوان : 17 ش الشريف المتفرع من ش 15 خلف ماء الذهب</h1>
+                            </div>
+                            <div class="center">
+                                <h1>طوال ايام الاسبوع عدا الجمعة</h1>
+                                <h1>الساعة 1 ظهرا الي 5 المغرب</h1>
+                            </div>
+                        </div>
+                        <div class="contact center">
+                            <img src="imgs/logo.png" alt="">
+                            <div class="center">
+                                <h1>01098797684</h1>
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+                <button type="submit" name="send" class="btn">طباعة</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

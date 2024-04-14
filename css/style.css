@@ -68,6 +68,7 @@
     font-size: 15px;
     padding: 5px 10px;
     transition: .3s;
+    cursor: pointer;
 }
 
 .active {
@@ -334,4 +335,176 @@ aside form button:hover {
 
 .content table tbody td:first-child {
     border-radius: 0px 15px 15px 0px;
+}
+
+/* treatment start */
+
+.content .treatment {
+    padding: 20px;
+    width: 100%;
+    gap: 5px;
+    height: 100%;
+    /* background-color: #1400ff; */
+}
+
+.content .treatment .t-details {
+    width: 100%;
+    height: 100%;
+    background-color: #c8c8c856;
+    border-radius: 10px;
+}
+
+.content .treatment .t-details header {
+    justify-content: space-between;
+    background-color: transparent;
+    border-bottom: 3px solid var(--black-color);
+    padding: 0 0 0px 0;
+}
+
+.content .treatment .t-details .dr-details {
+    justify-content: space-between;
+    width: 646px;
+}
+
+.content .treatment .t-details .dr-details img {
+    width: 120px;
+    height: 170px;
+}
+
+.content .treatment .t-details .dr-name {
+    width: 450px;
+    height: 160px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0;
+    color: var(--white-color);
+    background-image: linear-gradient(to right , var(--main-dark), var(--sec-color));
+    padding: 5px 30px;
+    border-radius: 0 10px 10px 0;
+    position: relative;
+}
+
+.content .treatment .t-details .dr-name::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    left: -35.5%;
+    top: 0;
+    border: 80px solid var(--main-dark);
+    border-color: transparent var(--main-dark) transparent transparent;
+}
+
+.content .treatment .t-details .dr-name h3 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: -7px;
+}
+
+.content .treatment .t-details .dr-name h1 {
+    font-size: 30px;
+    color: var(--white-color);
+    margin-bottom: -7px;
+}
+
+.content .treatment .t-details .dr-name p {
+    font-size: 17px;
+    text-align: center;
+    font-weight: 200;
+}
+
+.content .treatment .t-details form {
+    gap: 0;
+}
+
+.content .treatment .t-details form input {
+    width: 200px;
+    background-color: transparent;
+    font-size: 17px;
+    color: var(--black-color);
+    font-weight: 500;
+}
+
+.content .treatment .t-details form h1 {
+    font-size: 18px;
+    color: var(--black-color);
+}
+
+.content .treatment .t-details form div {
+    width: 300px;
+    background-color: transparent;
+    gap: 5px;
+    padding: 1px;
+}
+
+.content .treatment .t-details .body {
+    width: 100%;
+    padding: 10px;
+    gap: 0;
+}
+
+.content .treatment .t-details .body h1 {
+    font-size: 23px;
+    color: var(--black-color);
+    margin: -10px 0 -5px;
+}
+
+.content .treatment .t-details .body textarea {
+    width: 100%;
+    background-color: transparent;
+    font-size: 17px;
+    color: var(--black-color);
+    font-weight: 400;
+    height: 300px;
+    border-bottom: 2px solid var(--black-color);
+}
+
+.content .treatment .t-details footer {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.content .treatment .t-details footer .location {
+    font-size: 10px;
+    color: var(--black-color);
+    width: 50%;
+    /* background-color: #1400ff; */
+}
+
+.content .treatment .t-details footer .location i {
+    font-size: 14px;
+}
+
+.content .treatment .t-details footer .location div:nth-of-type(2) {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content .treatment footer .location div:nth-of-type(2) h1:first-child {
+    color: red;
+}
+
+.content .treatment footer .location div:nth-of-type(2) h1:last-child {
+    color: var(--sec-color);
+}
+
+.content .treatment .t-details footer .contact {
+    width: 25%;
+    justify-content: space-between;
+}
+
+.content .treatment .t-details footer .contact img {
+    width: 40px;
+}
+
+.content .treatment .t-details footer .contact div h1 {
+    font-size: 18px;
+    color: var(--black-color);
+    font-weight: 600;
+}
+
+.content .treatment .t-details footer .contact div i {
+    color: var(--black-color);
 }
