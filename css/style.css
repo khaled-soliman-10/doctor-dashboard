@@ -212,6 +212,7 @@ aside form button:hover {
     width: 100%;
     height: 100%;
     gap: 0px;
+    position: relative;
 }
 
 .content header,
@@ -337,6 +338,111 @@ aside form button:hover {
     border-radius: 0px 15px 15px 0px;
 }
 
+.content table tbody td .dots {
+    padding: 0px;
+    width: 60px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: var(--black-color);
+    background-color: var(--gray-week);
+    border-radius: 10px;
+}
+
+.medical-history {
+    position: absolute;
+    background-color: var(--gray-week);
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    padding: 10px 20px;
+    z-index: 20;
+    justify-content: space-between;
+    /* border-radius: 20px; */
+}
+
+.medical-history > a {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    font-size: 20px;
+    color: var(--white-color);
+    background-color: var(--main-dark);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.medical-history .header {
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.medical-history .header h1 {
+    font-size: 25px;
+    color: var(--main-color);
+    padding-right: 40px;
+}
+
+.medical-history .header img {
+    width: 40px;
+}
+
+.medical-history .details {
+    width: 100%;
+}
+
+.medical-history .details .name {
+    font-size: 15px;
+    color: var(--black-color);
+    margin-bottom: 20px;
+}
+
+.medical-history .details form {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.medical-history .details .detail {
+    width: 500px;
+    justify-content: flex-start;
+    background-color: transparent;
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+
+.medical-history .details .detail:not(:last-child) {
+    border-bottom: 1px solid var(--black-color);
+}
+
+.medical-history .details .detail h1 {
+    width: 200px;
+    font-size: 20px;
+}
+
+.medical-history .details .detail input,
+.medical-history .details .detail textarea {
+    width: 200px;
+    font-size: 17px;
+    background-color: transparent;
+}
+
+.medical-history .details .detail textarea {
+    resize: none;
+    height: 150px;
+}
+
+.medical-history .details > h1 {
+    align-self: flex-end;
+    color: var(--main-color);
+    margin-top: 20px;
+}
+
 /* treatment start */
 
 .content .treatment {
@@ -447,6 +553,7 @@ aside form button:hover {
     font-size: 23px;
     color: var(--black-color);
     margin: -10px 0 -5px;
+    direction: ltr;
 }
 
 .content .treatment .t-details .body textarea {
@@ -456,7 +563,6 @@ aside form button:hover {
     color: var(--black-color);
     font-weight: 400;
     height: 300px;
-    border-bottom: 2px solid var(--black-color);
 }
 
 .content .treatment .t-details footer {
@@ -464,6 +570,7 @@ aside form button:hover {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    border-top: 2px solid var(--black-color);
 }
 
 .content .treatment .t-details footer .location {
@@ -507,4 +614,294 @@ aside form button:hover {
 
 .content .treatment .t-details footer .contact div i {
     color: var(--black-color);
+}
+
+.content .treatment button {
+    width: 120px;
+}
+
+/* report start */
+
+.report {
+    /* background-color: #1400ff; */
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.report .report-content {
+    width: 100%;
+    height: 100%;
+}
+
+.report-content header {
+    width: 100%;
+    background-color: var(--gray-week);
+    flex-direction: column;
+    padding: 10px 10px 30px;
+    border-radius: 10px;
+}
+
+.report-content header img {
+    border-radius: 0;
+    align-self: flex-end;
+    height: 50px;
+}
+
+.report-content header .send-report {
+    width: 400px;
+    height: 140px;
+    background-image: linear-gradient(to right, var(--main-dark), var(--sec-color));
+    padding: 10px;
+    border-radius: inherit;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.report-content header .send-report i,
+.report-content header .send-report h1 {
+    font-size: 20px;
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+.report-content header .send-report button {
+    background-color: transparent;
+    color: var(--white-color);
+    border-radius: inherit;
+    width: 90px;
+    height: 35px;
+    font-size: 15px;
+    box-shadow: -1px -.4px 2px 1px var(--white-color);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.report-content header .send-report button:hover {
+    background-color: var(--white-color);
+    color: var(--sec-color);
+    box-shadow: none;
+    font-size: 16px;
+}
+
+.report-content .reports {
+    width: 100%;
+    height: 60%;
+    background-color: var(--gray-week);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.content .reports > h1 {
+    font-size: 25px;
+    color: var(--black-color);
+}
+
+.content .reports .table {
+    width: 100%;
+    height: 85%;
+    overflow-y: auto;
+    /* background-color: var(--gray-week); */
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+}
+
+.content .reports table {
+    width: 100%;
+    max-height: 100%;
+    border-collapse: collapse;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.content table td {
+    padding: 10px 12px;
+}
+
+.content table tbody form button {
+    background-color: transparent;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.content table tbody form button i {
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--black-color);
+}
+
+.content table tbody form button:hover {
+    transform: scale(1.1);
+}
+
+.content table tbody td > a {
+    background-color: var(--gray2-color);
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: var(--black-color);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.content table thead {
+    background-color: var(--gray2-color);
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.content .reports table tr {
+    transition: .3s;
+}
+
+.content table thead td:last-child {
+    border-radius: 15px 0 0 15px;
+}
+
+.content table thead td:first-child {
+    border-radius: 0px 15px 15px 0px;
+}
+
+.content table tbody tr:not(:last-of-type) {
+    border-bottom: 1px solid var(--gray-color);
+    transition: .3s;
+}
+
+.content table tbody {
+    font-size: 15px;
+    color: var(--gray-color);
+}
+
+.content table tbody tr:hover {
+    background-color: var(--gray-week);
+}
+
+.content table tbody td:last-child {
+    border-radius: 15px 0 0 15px;
+}
+
+.content table tbody td:first-child {
+    border-radius: 0px 15px 15px 0px;
+}
+
+.report .header h1 {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    color: var(--black-color);
+}
+
+.report .details p {
+    width: 100%;
+    resize: none;
+    height: 500px;
+    border-bottom: 1px solid var(--black-color);
+    font-size: 20px;
+}
+
+.report .details h1 {
+    color: var(--black-color);
+}
+
+.medical .header h1 {
+    padding-right: 0;
+}
+
+.medical .details .detail h1 {
+    width: fit-content;
+}
+
+.medical .details .detail input,
+.medical .details .detail textarea {
+    width: 280px;
+    /* background-color: #57b6f6; */
+}
+
+.medical .details .detail:last-child {
+    border-bottom: inherit;
+}
+
+.medical .details .ok {
+    width: 100%;
+    background-color: transparent;
+}
+
+.medical .details .ok button {
+    width: 120px;
+}
+
+.report-send {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--gray2-color);
+    padding: 30px;
+    display: none;
+    z-index: 20;
+}
+
+.report-send form {
+    border: 2px solid var(--black-color);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--white-color);
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.report-send form i {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 30px;
+    color: var(--black-color);
+    cursor: pointer;
+
+}
+
+.report-send form header {
+    background-color: transparent;
+}
+
+.report-send form header img {
+    border-radius: 0;
+    height: fit-content;
+}
+
+.report-send form header h1 {
+    font-size: 25px;
+    color: var(--black-color);
+}
+
+.report-send form .body {
+    border-bottom: 1px solid var(--black-color);
+    border-radius: 0;
+    width: 100%;
+    height: 80%;
+}
+
+.report-send form .body h1 {
+    direction: ltr;
+    font-size: 25px;
+    color: var(--black-color);
+}
+
+.report-send form .body textarea {
+    resize: none;
+    width: 100% !important;
+    height: 100% !important;
+    font-size: 17px;
+    color: var(--black-color);
+}
+
+.report-send form > button {
+    width: 120px;
 }

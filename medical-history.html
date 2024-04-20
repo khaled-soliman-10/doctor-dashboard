@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>مستشفي الحياة</title>
+</head>
+<body>
+    
+    <section class="main start">
+        <aside class="clm width">
+            <div class="main-content clm">
+                <header class="center">
+                    <div class="logo center">
+                        <img src="imgs/logo2.png" alt="">
+                        <a href="index.html"><h1>الـ<span>حـ</span>يـاة</h1></a>
+                    </div>
+                    <button class="center"><i class="fa-solid fa-bars"></i></button>
+                </header>
+
+                <div class="links clm">
+
+                    <a class="link center active" href="index.html">
+                        <i class="fa-solid fa-bed-pulse"></i>
+                        <h1>المرضي</h1>
+                    </a>
+
+                    <a class="link center" href="treatment.html">
+                        <i class="fa-solid fa-file-medical"></i>
+                        <h1>الروشتة</h1>
+                    </a>
+
+                    <a class="link center" href="medical.html">
+                        <i class="fa-solid fa-receipt"></i>
+                        <h1>التشخيص المرضي</h1>
+                    </a>
+
+                    <a class="link center" href="reports.html">
+                        <i class="fa-solid fa-file-signature"></i>
+                        <h1>التقارير</h1>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <form action="" method="post" class="center">
+                <button type="submit" name="exit" class="btn center">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <h1>
+                        تسجيل خروج
+                    </h1>
+                </button>
+            </form>
+        </aside>
+        <div class="content clm">
+            <!-- التشخيص -->
+            <div class="medical-history clm">
+                <a href="index.html" class="center"><i class="fa-solid fa-xmark"></i></a>
+                <div class="header center">
+                    <h1>التاريخ المرضي السابق</h1>
+                    <img src="imgs/logo.png" alt="">
+                </div>
+                <!-- المحتوي -->
+                <div class="details clm">
+                    <div class="name center">
+                        <h1>السيد / </h1>
+                        <h1>احمد صلاح عبد الرحمن</h1>
+                    </div>
+                    
+                    <form action="" method="post" class="center">
+
+                        <div class="detail center">
+                            <h1>تاريخ الكشف : </h1>
+                            <input type="text" readonly name="date" value="22-10-2023">
+                        </div>
+
+                        <div class="detail center">
+                            <h1>التشخيص : </h1>
+                            <input type="text" readonly name="illness" value="خلع ضرس">
+                        </div>
+
+                        <div class="detail center">
+                            <h1>التحاليل المطلوبة : </h1>
+                            <textarea name="analysis" readonly>
+                                ضغط دم ,قياس السكر
+                            </textarea>
+                        </div>
+
+                        <div class="detail center">
+                            <h1>الاشعة المطلوبة : </h1>
+                            <textarea name="rays" readonly>
+                                فك سفلي ,فك علوي
+                            </textarea>
+                        </div>
+
+                        <div class="detail center">
+                            <h1>الادوية الموصوفة : </h1>
+                            <textarea name="drugs" readonly>
+                                بنادول ,كالسيوم ,مضاد للتورم
+                            </textarea>
+                        </div>
+
+                    </form>
+                    <h1>مستشفي الحياة</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
